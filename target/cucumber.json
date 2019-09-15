@@ -1,0 +1,242 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 10377460050,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 6,
+        "name": "send message to customer service",
+        "description": "",
+        "id": "contact-us;send-message-to-customer-service",
+        "after": [
+          {
+            "result": {
+              "duration": 97086810,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 373270810,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i am on homepage",
+            "match": {
+              "location": "ContactUsStef.i_am_on_homepage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1230389256,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i click on contact us button",
+            "match": {
+              "location": "ContactUsStef.i_click_on_contact_us_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 12801922,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i should redirect to contact us page",
+            "match": {
+              "location": "ContactUsStef.i_should_redirect_to_contact_us_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 755386392,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "i enters all details",
+            "match": {
+              "location": "ContactUsStef.i_enters_all_details()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 712661335,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "click on send button",
+            "match": {
+              "location": "ContactUsStef.click_on_send_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 38918368,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "i should see the message sent sucessfully",
+            "match": {
+              "location": "ContactUsStef.i_should_see_the_message_sent_sucessfully()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 5,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "Contact Us",
+    "description": "As an end user\ni want to contact to customer service\nso i can send message to customer service",
+    "id": "contact-us",
+    "keyword": "Feature",
+    "uri": "contactUs.feature"
+  },
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 5367203250,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Register new user with exsisting email",
+        "description": "",
+        "id": "regestration;register-new-user-with-exsisting-email",
+        "after": [
+          {
+            "result": {
+              "duration": 94144029,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 8587929,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "i am on homepage",
+            "match": {
+              "location": "ContactUsStef.i_am_on_homepage()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1758048978,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "i click on sign in link",
+            "match": {
+              "location": "RegestrationStef.i_click_on_sign_in_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 172411336,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "i enter \"test@test.com\" to create new account",
+            "match": {
+              "arguments": [
+                {
+                  "val": "test@test.com",
+                  "offset": 9
+                }
+              ],
+              "location": "RegestrationStef.i_enter_to_create_new_account(String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 138501713,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "i click Create an account",
+            "match": {
+              "location": "RegestrationStef.i_click_Create_an_account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 573209456,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "i should see \"Check mini error box contain An account using this email address has already been registered. Please enter a valid password or request a new one\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Check mini error box contain An account using this email address has already been registered. Please enter a valid password or request a new one",
+                  "offset": 14
+                }
+              ],
+              "location": "RegestrationStef.i_should_see(String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 3,
+            "name": "@Test"
+          }
+        ]
+      }
+    ],
+    "name": "regestration",
+    "description": "",
+    "id": "regestration",
+    "keyword": "Feature",
+    "uri": "registration.feature"
+  }
+]
